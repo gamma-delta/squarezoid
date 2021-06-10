@@ -1,0 +1,18 @@
+[package]
+name = "squarezoid"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "squarezoid"
+crate-type = ["cdylib"]
+
+[dependencies]
+ahash = "0.7.4"
+keyframe = "1.0.3"
+vst = "0.2.1"
+
+[profile.dev.package.'*']
+opt-level = 3
